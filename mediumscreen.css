@@ -1,0 +1,644 @@
+@font-face {
+  font-family: gilroy;
+  src: url("./fonts/Gilroy-ExtraBold.ttf");
+}
+@font-face {
+  font-family: gilroyBold;
+  src: url("./fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: gilroyMedium;
+  src: url("./fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: gilroyRegular;
+  src: url("./fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: gilroySemiBold;
+  src: url("./fonts/Gilroy-SemiBold.ttf");
+}
+body {
+  width: 100%;
+  background-image: url(./images/background.png), url(./images/Ellipse\ 72.png),
+    url(./images/background2.png), url(./images/Vector\ 8.svg),
+    url(./images/background.png), url(./images/background2.png),
+    url(./images/background.png), url(./images/background2.png),
+    url(./images/background.png), url(./images/background2.png),
+    url(./images/background.png), url(./images/background2.png),
+    url(./images/background.png);
+  background-size: 39vw 30vh, 193.71196754563894vh 193.71196754563894vh,
+    39vw 30vh, 52vh 155vh, 39vw 30vh, 39vw 30vh, 39vw 30vh, 39vw 30vh, 39vw 30vh,
+    39vw 30vh, 39vw 30vh, 39vw 30vh, 39vw 30vh;
+  background-position: left 59.557047vh, left 20% top -3.2454361054766734vh,
+    right 90vh, right 5vh, left 150vh, right 340vh, left 400vh, right 500vh,
+    left 600vh, right 700vh, left 800vh, right 900vh, left 950vh;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+.home {
+  font-family: gilroy;
+}
+.navbar {
+  display: flex;
+  margin-top: 0vh;
+}
+.navLogo {
+  height: 12vh;
+  width: 18vw;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+.option {
+  display: flex;
+  margin-top: 2.11vh;
+  margin-left: 4vh;
+}
+.option p {
+  font-family: gilroyMedium;
+  color: #c4c6d6;
+  font-size: 1.5vh;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 5vh;
+}
+.navButton {
+  position: relative;
+  font-family: gilroyBold;
+  width: 14vh;
+  height: 6vh;
+  border-radius: 4.54vh;
+  margin-top: 1vh;
+  margin-right: 1vh;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.5vh;
+  font-weight: 700;
+  background: transparent;
+  border: 0.16vh solid lightgray;
+  border-radius: 6.08vh;
+}
+.navButton::before {
+  content: "";
+  position: absolute;
+  border-radius: 4.54vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    133.95deg,
+    #f7941d -13.98%,
+    #ee4163 57.42%,
+    #8a2be2 112.06%
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -1;
+}
+
+.navButton:hover::before {
+  opacity: 1;
+}
+.navButton:hover {
+  border: none;
+}
+.title22 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 7vh;
+  font-weight: 800;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.headingPara br {
+  display: none;
+}
+.headingPara {
+  font-family: gilroyRegular;
+  font-size: 2vh;
+  font-weight: 500;
+  color: #c4c6d6;
+  margin-top: 4.87vh;
+  padding: 2vh;
+}
+.demo img {
+  margin-top: 0vh;
+  width: 14.67vh;
+  height: 12vh;
+  margin-left: 0vh;
+}
+.headerCall {
+  position: relative;
+  font-family: gilroySemiBold;
+  color: white;
+  width: 25vh;
+  height: 9vh;
+  border: none;
+  margin-top: 2vh;
+  margin-right: 1vh;
+  font-weight: 600;
+  font-size: 2vh;
+  line-height: 3.89vh;
+  background: linear-gradient(
+    133.95deg,
+    #f7941d -13.98%,
+    #ee4163 57.42%,
+    #8a2be2 112.06%
+  );
+  border-radius: 6.08vh;
+  cursor: pointer;
+  transition: 0.7;
+}
+.caseStudy {
+  font-family: gilroySemiBold;
+  width: 25vh;
+  height: 9vh;
+  border: 0.16vh solid lightgray;
+  border-radius: 6.08vh;
+  margin-top: 2vh;
+  margin-right: 8%;
+  cursor: pointer;
+  color: white;
+  font-size: 2vh;
+  font-weight: 700;
+  background: transparent;
+}
+
+.video {
+  margin-top: 5vh;
+  width: 100%;
+  height: 70vh;
+}
+video {
+  width: 94%;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  margin-top: -16vh;
+}
+.service-advantage {
+  margin-top: 0vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2vh;
+}
+.details h3 {
+  text-align: left;
+  font-size: 3.5 vh;
+  margin-bottom: 4vh;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.details p {
+  color: #c4c6d6;
+  font-family: gilroyRegular;
+  text-align: left;
+  margin-top: -2vh;
+
+  font-size: 2vh;
+  font-weight: 500;
+}
+.details p br {
+  display: none;
+}
+.headerIcon {
+  height: 4.3vh;
+  width: 4.3vh;
+  margin-top: 1vh;
+  margin-right: 0.5vh;
+}
+.line {
+  display: none;
+}
+#right-details {
+  margin-left: 0vh;
+  padding-right: 2vh;
+}
+.advantage {
+  margin-top: 5vh;
+  width: 100%;
+  margin-left: 0%;
+}
+.advantage-title {
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 7vh;
+  font-weight: 700;
+}
+.advantages {
+  display: flex;
+  width: 100%;
+}
+.advantageCard {
+  background-color: #201e28;
+  height: 30vh;
+  margin: 2vh 1vh;
+  padding: 0vh;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.advantage img {
+  height: 8vh;
+  width: 8vh;
+  margin-bottom: 0vh;
+}
+.advantageCard h3 {
+  font-size: 2.5vh;
+  font-weight: 800;
+  margin-top: 2vh;
+}
+
+.advantageCard h3 br {
+  display: none;
+}
+.advantageCard p {
+  font-weight: 700;
+  cursor: pointer;
+  color: #c4c6d6;
+  font-family: gilroyRegular;
+  font-size: 1.5vh;
+  margin-top: 0vh;
+}
+.advantageCard p br {
+  display: none;
+}
+.automation {
+  width: 100%;
+  margin-left: 0;
+  margin-top: -76vh;
+}
+.automations {
+  display: flex;
+  width: 100%;
+}
+.automationTitle {
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7vh;
+  font-weight: 700;
+  margin-top: 0vh;
+}
+.automationCard {
+  height: 61vh;
+  width: 49%;
+  background-color: #201e28;
+  margin-left: 1vh;
+  margin-top: -15vh;
+}
+.automationCard p {
+  margin-left: 0.5vh;
+  margin-top: 3vh;
+  font-weight: 500;
+  color: #c4c6d6;
+  font-family: gilroyRegular;
+  font-size: 1.8vh;
+}
+.automationCard h3 {
+  color: white;
+  font-size: 3vh;
+  font-weight: 800;
+  margin-left: 2vh;
+  margin-bottom: 0vh;
+}
+
+.icon {
+  width: 8vh;
+  height: 8vh;
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-bottom: 3vh;
+}
+.checkpoint {
+  display: flex;
+}
+.checkpoint img {
+  height: 2.93vh;
+  width: 2.93vh;
+  margin-left: 2vh;
+  margin-top: 2.9vh;
+}
+#rightAutomationCard {
+  background: linear-gradient(
+    133.95deg,
+    #f7941d -13.98%,
+    #ee4163 57.42%,
+    #8a2be2 112.06%
+  );
+}
+
+.ShipSquadExample h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7vh;
+  font-weight: 700;
+  margin-top: -75vh;
+}
+.exampleCard {
+  height: 85vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10.3vh;
+  background-color: #201e28;
+}
+#para1 {
+  color: white;
+  border-style: solid;
+  border-width: 0.41;
+  border-image: conic-gradient(#f7941d, #ee4163, #8a2be2) 1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-left: 2vh;
+}
+#para2 {
+  padding-left: 2vh;
+}
+#para3 {
+  padding-left: 2vh;
+}
+
+.examleCardTitle p {
+  width: 33%;
+  color: gray;
+  font-size: 1.5vh;
+  font-family: gilroyRegular;
+  margin-top: 3.23vh;
+  padding-bottom: 4.11vh;
+  margin-bottom: -0.41vh;
+  font-weight: 600;
+  margin-left: 0px;
+  cursor: pointer;
+}
+.exampleCard img {
+  height: 80%;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 3vh;
+  object-fit: cover;
+}
+.slider {
+  width: 98%;
+  margin-left: 2%;
+  height: 82.75vh;
+  margin-top: 10vh;
+  display: flex;
+}
+.sliderHeading h1 {
+  font-size: 6vh;
+  font-weight: 800;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testiMonialArea p {
+  font-family: gilroyRegular;
+  font-size: 1.5vh;
+  font-weight: 500;
+  color: #c4c6d6;
+}
+.testiMonialArea img {
+  height: 0.2vh;
+  width: 5vh;
+  margin-top: 0.8vh;
+  margin-left: 1vh;
+}
+.quote {
+  height: 5vh;
+  width: 5vh;
+}
+.div p {
+  font-family: gilroyRegular;
+  font-size: 1.5vh;
+  font-weight: 400;
+  padding-right: 0vh;
+  color: #c4c6d6;
+  margin-right: 2vh;
+  margin-top: 4vh;
+  opacity: 0.7;
+}
+.div p br {
+  display: none;
+}
+.divCeo h5 {
+  font-family: gilroyRegular;
+  font-size: 1.6vh;
+  font-weight: 600;
+  color: #c4c6d6;
+  margin-left: -5vh;
+}
+.divCeo h6 {
+  font-family: gilroyRegular;
+  font-size: 1.2vh;
+  letter-spacing: 1vh;
+  font-weight: 400;
+  color: #c4c6d6;
+  opacity: 0.5;
+  margin-left: -5vh;
+}
+#rightArrow {
+  margin-right: 16vh;
+  margin-top: 52vh;
+}
+#leftArrow {
+  margin-left: 12vh;
+  margin-top: 52vh;
+}
+.howwork {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: -16vh;
+}
+.cards {
+  width: 25%;
+  margin-right: 1.11vh;
+  height: 30vh;
+  background-color: #201e28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howwork h1 {
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 7vh;
+}
+.cards img {
+  height: 7.51vh;
+  width: 7.51vh;
+  margin-top: 4.17vh;
+}
+.cards h2 {
+  text-align: center;
+  font-size: 3vh;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 2.17vh;
+}
+.howWorkCard {
+  display: flex;
+  margin-top: 5.74vh;
+}
+.ship-squad h1 {
+  font-size: 7vh;
+  font-weight: 700;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ship-squad {
+  margin-top: 20.57vh;
+  width: 94%;
+  margin-left: 2%;
+}
+.ceoImage {
+  height: 45.03vh;
+  width: 37.16vh;
+  background: linear-gradient(
+    133.95deg,
+    #f7941d -13.98%,
+    #ee4163 57.42%,
+    #8a2be2 112.06%
+  );
+  background-position: left 6.23vh top 12vh;
+  background-size: 27.23vh 78.8vh;
+  background-repeat: no-repeat;
+  padding-top: 0vh;
+}
+.about-seo {
+  margin-top: 5vh;
+  width: 50%;
+  margin-left: 0vh;
+}
+.about-seo h4 {
+  font-size: 4vh;
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 4vh;
+}
+.title {
+  display: flex;
+  margin-top: 4.11vh;
+  margin-left: 4vh;
+}
+.about-seo p {
+  font-family: gilroyRegular;
+  margin-top: 0.17vh;
+  font-size: 1.5vh;
+  color: #c4c6d6;
+  margin-left: 3vh;
+  margin-bottom: 0vh;
+  margin-bottom: -19vh;
+}
+.title h6 {
+  font-size: 2vh;
+  font-family: gilroyRegular;
+  color: #c4c6d6;
+  margin-top: 0px;
+  font-weight: 600;
+}
+.title img {
+  height: 0.2vh;
+  width: 5.55vh;
+  margin-top: 1vh;
+  margin-right: 2.5vh;
+}
+.shipSquadCallButton {
+  font-family: gilroySemiBold;
+  color: white;
+  width: 24vh;
+  height: 7vh;
+  border: none;
+  margin-top: 2vh;
+  margin-right: 4.87vh;
+  margin-left: 4vh;
+  font-weight: 600;
+  font-size: 2vh;
+  line-height: 3.89vh;
+  background: linear-gradient(
+    133.95deg,
+    #f7941d -13.98%,
+    #ee4163 57.42%,
+    #8a2be2 112.06%
+  );
+  border-radius: 6.08vh;
+  cursor: pointer;
+}
+.getReady h1 {
+  background: -webkit-linear-gradient(
+    rgba(221, 230, 255, 1) 30%,
+    rgba(255, 243, 232, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 7vh;
+  margin-top: 10vh;
+}
+.footer {
+  height: 57vh;
+  width: 94%;
+  margin-left: 2%;
+  margin-bottom: -10vh;
+  margin-top: -10vh;
+}
+.leftEnd p {
+  font-family: gilroyRegular;
+  font-size: 1vh;
+  color: #c4c6d6;
+  opacity: 0.5;
+}
